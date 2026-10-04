@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search papers – Paper Reading List</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/search.js"></script>
+</head>
+<body>
+  <nav id="nav"></nav>
+  <main>
+    <h1>Search scientific papers</h1>
+    <form id="search-form" class="search">
+      <input id="query" type="search" required maxlength="200"
+             placeholder="e.g. open access, climate change" aria-label="Search term">
+      <button type="submit">Search</button>
+    </form>
+    <p id="guest-hint" class="hint" hidden>
+      <a href="login.html">Log in or register</a> to save papers to your own reading list.
+    </p>
+    <p id="message" class="message"></p>
+    <div id="results"></div>
+  </main>
+</body>
+</html>

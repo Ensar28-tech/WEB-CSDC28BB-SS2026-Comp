@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin – Paper Reading List</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+  <nav id="nav"></nav>
+  <main>
+    <h1>Saved papers (admin)</h1>
+    <p class="hint">
+      Every paper that any user has saved is stored once. "Refresh all" fetches each one
+      again from OpenAlex and updates it for every user who saved it.
+    </p>
+    <button id="refresh-button" type="button">Refresh all saved papers</button>
+    <p id="message" class="message"></p>
+    <ul id="changes"></ul>
+    <div id="papers"></div>
+  </main>
+</body>
+</html>

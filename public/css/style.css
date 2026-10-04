@@ -1,0 +1,190 @@
+:root {
+  --accent: #2457a6;
+  --accent-dark: #1b4282;
+  --text: #1d232b;
+  --muted: #5b6573;
+  --border: #d7dce3;
+  --page: #f5f7fa;
+  --error: #b3261e;
+  --success: #1d7a3b;
+  --retracted: #fdeceb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--page);
+}
+
+/* ---------- menu ---------- */
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: white;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav a.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#nav .brand {
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+#nav .account {
+  margin-left: auto;
+}
+
+#nav .account button {
+  margin-left: 8px;
+  background: white;
+  color: var(--accent);
+}
+
+/* ---------- page ---------- */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.hint {
+  color: var(--muted);
+}
+
+.message {
+  min-height: 1.4em;
+}
+
+.message.error {
+  color: var(--error);
+}
+
+.message.success {
+  color: var(--success);
+}
+
+/* ---------- forms and buttons ---------- */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+button:disabled {
+  background: #9aa5b4;
+  cursor: default;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+form.search {
+  display: flex;
+  gap: 8px;
+  max-width: 640px;
+}
+
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+form.card {
+  width: 340px;
+  max-width: 100%;
+  padding: 16px 20px 20px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+form.card h2 {
+  margin-top: 0;
+}
+
+form.card label {
+  display: block;
+  margin: 12px 0 4px;
+}
+
+form.card button {
+  margin-top: 16px;
+}
+
+/* ---------- paper table ---------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid var(--border);
+}
+
+th,
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/* Only the title column wraps; dates and numbers stay on one line. */
+td:first-child {
+  white-space: normal;
+  min-width: 260px;
+}
+
+th {
+  background: #eef1f5;
+}
+
+td a {
+  color: var(--accent);
+}
+
+tr.retracted td {
+  background: var(--retracted);
+}
+
+#changes {
+  padding-left: 20px;
+}

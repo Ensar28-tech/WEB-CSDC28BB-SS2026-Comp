@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in – Paper Reading List</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/login.js"></script>
+</head>
+<body>
+  <nav id="nav"></nav>
+  <main>
+    <h1>Log in or create an account</h1>
+    <p id="message" class="message"></p>
+    <div class="forms">
+      <form id="login-form" class="card">
+        <h2>Log in</h2>
+        <label for="login-username">Username</label>
+        <input id="login-username" name="username" autocomplete="username" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Log in</button>
+      </form>
+      <form id="register-form" class="card">
+        <h2>Register</h2>
+        <label for="register-username">Username (3–30 letters, digits, . _ -)</label>
+        <input id="register-username" name="username" autocomplete="username" required
+               minlength="3" maxlength="30" pattern="[A-Za-z0-9_.\-]+">
+        <label for="register-password">Password (at least 8 characters)</label>
+        <input id="register-password" name="password" type="password" autocomplete="new-password" required
+               minlength="8" maxlength="72">
+        <button type="submit">Create account</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
