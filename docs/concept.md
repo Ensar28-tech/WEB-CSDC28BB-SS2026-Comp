@@ -2,9 +2,6 @@
 
 Ensar Gegic · Web Technologies ILV, compensational exercise, summer term 2026
 
-This is the approved concept, with the clarifications the instructors asked for at
-approval. Section 5 is new, and sections 2 and 4 gained detail on dates and the refresh.
-
 ## 1. External API
 
 The application uses the [OpenAlex REST API](https://docs.openalex.org). OpenAlex provides
