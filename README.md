@@ -31,8 +31,8 @@ The npm packages (installed by `npm install`):
 ## Installation
 
 ```bash
-git clone <this repository's URL>
-cd openalex-reading-list
+git clone https://github.com/Ensar28-tech/WEB-CSDC28BB-SS2026-Comp.git
+cd WEB-CSDC28BB-SS2026-Comp
 npm install
 ```
 
