@@ -66,7 +66,11 @@ npm start
 ```
 
 Then open <http://localhost:3000> in a browser. The same server delivers both the web
-pages (client) and the REST API, so there is nothing else to start.
+pages (client) and the REST API, so there is nothing else to start. Stop it with Ctrl+C.
+
+On Windows, PowerShell may refuse with "running scripts is disabled on this system".
+Then run `npm.cmd start` instead (the same goes for `npm.cmd install` and `npm.cmd test`),
+or use the Command Prompt (`cmd`).
 
 On the first start the server creates the admin account:
 
